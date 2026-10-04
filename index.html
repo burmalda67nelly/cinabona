@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Повелительница синабонов 👑</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html">👑 Ирина — повелительница выпечки</a>
+  <nav><a class="active" href="index.html">Главная</a><a href="support.html">Поддержка 💌</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="sticker">👑 ПОВЕЛИТЕЛЬНИЦА<br>СИНАБОНОВ И<br>ТВОРОЖНЫХ ПЕЧЕНИЙ</div>
+  <p class="eyebrow">ОПЕРАЦИЯ № 01</p>
+  <h1>Мама,<br><span>ты справишься.</span></h1>
+  <p class="lead">60 синабонов + 120 печений.<br>Примерно 5 часов великой выпечки.</p>
+  <a class="btn" href="#progress">Начать операцию →</a>
+</section>
+
+<section id="progress" class="paper">
+  <div class="section-title"><span>🌀</span><div><small>ГЛАВНАЯ МИССИЯ</small><h2>180 вкусных подвигов</h2></div></div>
+  <div class="cards">
+    <article class="counter">
+      <div class="food">🌀</div><h3>Синабоны</h3>
+      <strong><span id="rolls">0</span> / 60</strong>
+      <div class="bar"><i id="rollBar"></i></div>
+      <div class="actions"><button onclick="add('rolls',1)">+1</button><button onclick="add('rolls',10)">+10</button></div>
+    </article>
+    <article class="counter">
+      <div class="food">🍪</div><h3>Творожные печенья</h3>
+      <strong><span id="cookies">0</span> / 120</strong>
+      <div class="bar"><i id="cookieBar"></i></div>
+      <div class="actions"><button onclick="add('cookies',1)">+1</button><button onclick="add('cookies',10)">+10</button></div>
+    </article>
+  </div>
+  <div class="timer">
+    <div><small>ВРЕМЯ ВЕЛИКОЙ ВЫПЕЧКИ</small><h2 id="timer">05:00:00</h2></div>
+    <button class="btn small" onclick="startTimer()">▶ Запустить таймер</button>
+  </div>
+</section>
+
+<section class="notes">
+  <div class="note">💗 Ты уже делаешь очень много.<br><b>Пожалуйста, не забывай отдыхать.</b></div>
+  <div class="note">🌀 Синабоны под контролем.<br><b>Печенья тоже. Мама — в ресурсе.</b></div>
+  <div class="note">🍪 Один кусочек печенья — официальная премия начальству.</div>
+  <div class="note">👑 Даже королевам иногда нужен чай и пять минут тишины.</div>
+</section>
+
+<section class="support-box">
+  <div><span class="crown">♛</span><h2>Срочная моральная поддержка</h2></div>
+  <p id="quote">Ты сильная. Ты добрая. И ты точно справишься.</p>
+  <button class="btn" onclick="newQuote()">Дай ещё одну 💌</button>
+</section>
+</main>
+<footer>Сделано специально для самой лучшей мамы ♡</footer>
+<script src="script.js"></script>
+</body>
+</html>
